@@ -7,7 +7,7 @@ import './index.css'
 
 const Layout = ({ children, data }) => {
   const meta = data.site.siteMetadata;
-  console.log(meta)
+  // console.log(meta)
   return (
     <div>
       <Helmet
