@@ -19,8 +19,6 @@ class IndexPage extends React.Component {
   }
 
   render() {
-    // const data = this.retrieveTableData(sheetURL);
-    console.log(this.state)
     return (
       <main role="main">
         <section>
