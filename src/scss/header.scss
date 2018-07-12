@@ -1,54 +1,65 @@
 $white: #f5f5f5;
 $text-red: #F10303;
 $text-blue: #13136b;
+$lg-res-width: 800px;
+$sm-res-width: 600px;
 
 #header-container {
   margin-bottom: 1.45rem;
   background-image: url("../img/frat_house.jpg");
-  // background-repeat: unset;
-  // background-size: cover;
-  padding: 3rem 0;
+  padding: 2rem 0;
+  letter-spacing: 1px;
+
+  @media screen and (max-width: $sm-res-width) {
+    padding: 0;
+  }
 
   #header-content {
     display: flex;
-    // max-width: 960px;
     width: 100%;
+    height: 95%;
     padding: 3rem 2rem;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.65);
-    // border-radius: .45rem;
+    background: hsla(0, 0%, 0%, 0.75);
+
+    @media screen and (max-width: $lg-res-width) {
+      padding: 1rem;
+    }
 
     #title-container {
       margin-left: 2.5rem;
       align-self: flex-start;
       width: 60%;
 
-
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: $lg-res-width) {
         width: 100%;
         margin: 0 auto;
+        text-align: center;
       }
 
-
+      // Title
       h1 {
         font-size: 250%;
         margin: 0;
         margin-bottom: .1rem;
       }
+      // SubTitle
       h2 {
         color: $text-red;
-        text-shadow: #ffffff93 1px 2px;
+        text-shadow: hsla(0, 0%, 96%, 0.452) -1px 2px;
+        margin-left: .25rem;
         margin-bottom: .5rem;
         font-size: 165%;
       }
     }
 
+    // Flag, Header
     img {
       margin-bottom: 0;
-      border: 1px solid black;
-      border-radius: 1em;
+      border: 3px solid hsla(0, 0%, 0%, 1);
+      border-radius: .1em;
 
-      @media screen and (max-width: 798px) {
+      @media screen and (max-width: $lg-res-width) {
         display: none;
       }
     }
@@ -57,30 +68,35 @@ $text-blue: #13136b;
       display: flex;
       width: 100%;
 
-      @media screen and (max-width: 660px) {
+      @media screen and (max-width: $lg-res-width) {
         flex-direction: column;
       }
 
+      // Gatsby Links
       a {
-        width: 33.333%;
+        font-size: 110%;
+        font-weight: 600;
         color: $white;
         text-decoration: none;
         text-align: center;
-        font-weight: 600;
-        border-radius: .5em;
-        background: #3f000059;
+        border: 5px solid hsla(194, 59%, 79%, 0.3);
+        background: hsla(0, 100%, 4%, 0.349);
+        background-clip: padding-box;
+        width: 33.333%;
         margin: .1em .25em;
         padding: .3em;
-        box-shadow: -.05em .05em .02em  #ff5555 ;
 
-        @media screen and (max-width: 660px) {
+        @media screen and (max-width: $lg-res-width) {
+          width: 60%;
+          margin: .1rem auto;
+        }
+        @media screen and (max-width: 600px) {
           width: 80%;
-          margin: .1em auto;
+          margin: .5rem auto;
         }
         &:hover {
           background: #fff;
-          font-weight: 700;
-          border-top: none;
+          font-weight: 800;
           color: $text-red;
           text-decoration: underline;
         }

@@ -1,10 +1,10 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-const ReunionsPage = () => (
+const ContactsPage = () => (
   <div>
-    Reunions Page
+    Contacts Page
   </div>
 )
 
-export default ReunionsPage
+export default ContactsPage
