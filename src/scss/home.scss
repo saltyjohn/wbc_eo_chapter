@@ -1,0 +1,12 @@
+$main-color: #c6d2da;
+
+main {
+  section {
+    border: 3px solid $main-color;
+
+    h3 {
+      background-color: $main-color;
+      padding: 1em .2em;
+    }
+  }
+}
