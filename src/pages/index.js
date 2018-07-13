@@ -34,9 +34,6 @@ class IndexPage extends React.Component {
     const { alumComm, brothers } = this.state
     return (
       <main role="main">
-        <div className="page-header">
-          <h1>Home</h1>
-        </div>
         <section>
           <h3>Alumni Committee</h3>
           {alumComm ? <Alumni rows={Object.values(alumComm)} /> : <Loading />}
