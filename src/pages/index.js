@@ -7,6 +7,7 @@ import Loading from '../components/loading'
 import sortTableData from '../utils/sortTableData'
 import '../scss/home.scss'
 
+// TODO: move fetch into layout
 class IndexPage extends React.Component {
   constructor(props) {
     super(props);
@@ -20,12 +21,17 @@ class IndexPage extends React.Component {
       .then(data => data.text())
       .then(text => sortTableData(text))
       .then(contacts =>
-        setTimeout(() => {
-          this.setState({
-            alumComm: contacts['table_0'],
-            brothers: contacts['table_1']
-          })
-        }, 2000)
+        this.setState({
+          alumComm: contacts['table_0'],
+          brothers: contacts['table_1']
+        })
+        //  FOR TESTING LOADING COMPONENT
+        // setTimeout(() => {
+        //   this.setState({
+        //     alumComm: contacts['table_0'],
+        //     brothers: contacts['table_1']
+        //   })
+        // }, 200)
       )
       .catch(err => console.log(err))
   }
