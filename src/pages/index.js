@@ -1,5 +1,5 @@
 import React from 'react'
-import Alumni from '../components/contact.alumni'
+import Alumni from '../components/alumni.comm'
 
 import sortTableData from '../utils/sortTableData'
 // import searchIcon from '../icons/zondicons/search.svg'
