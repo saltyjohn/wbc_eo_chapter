@@ -1,13 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
-
 import Alumni from '../components/contact.alumni'
-import Loading from '../components/loading'
 
 import sortTableData from '../utils/sortTableData'
 import '../scss/home.scss'
 
-// TODO: move fetch into layout
 class IndexPage extends React.Component {
   constructor(props) {
     super(props);
@@ -25,13 +21,6 @@ class IndexPage extends React.Component {
           alumComm: contacts['table_0'],
           brothers: contacts['table_1']
         })
-        //  FOR TESTING LOADING COMPONENT
-        // setTimeout(() => {
-        //   this.setState({
-        //     alumComm: contacts['table_0'],
-        //     brothers: contacts['table_1']
-        //   })
-        // }, 200)
       )
       .catch(err => console.log(err))
   }
@@ -41,8 +30,10 @@ class IndexPage extends React.Component {
     return (
       <main role="main">
         <section>
-          <h3>Alumni Committee</h3>
-          {alumComm ? <Alumni rows={Object.values(alumComm)} /> : <Loading />}
+          <nav>
+            <h3>Alumni Committee</h3>
+          </nav>
+          {alumComm ? <Alumni rows={Object.values(alumComm)} /> : <div />}
         </section>
       </main>
     )

@@ -1,9 +1,19 @@
 import React from 'react';
-import Link from 'gatsby-link';
+
+import oxFlag from '../img/ox_new.jpg'
 
 const RIP = () => (
   <div>
-    <p>RIP</p>
+    <p
+      style={{
+        margin: '0 1em',
+        fontSize: 20,
+        fontWeight: 700,
+        color: '#686767'
+      }}
+    >
+      RIP
+    </p>
   </div>
 )
 

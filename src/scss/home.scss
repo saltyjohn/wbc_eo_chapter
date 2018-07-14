@@ -6,10 +6,21 @@ $xs-res-width: 480px;
 main {
   section {
     border: 3px solid $main-color;
+    border-radius: .5em;
+
+    nav {
+      display: flex;
+      margin: 0 auto;
+    }
 
     h3 {
       background-color: $main-color;
-      padding: 1em .2em;
+      padding: .7em .2em;
+      width: fit-content;
+      margin: 0 auto;
+      margin-bottom: 2em;
+      border-bottom-left-radius: .2em;
+      border-bottom-right-radius: .2em;
     }
   }
 }
