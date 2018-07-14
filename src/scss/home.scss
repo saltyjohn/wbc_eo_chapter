@@ -11,16 +11,25 @@ main {
     nav {
       display: flex;
       margin: 0 auto;
-    }
 
-    h3 {
-      background-color: $main-color;
-      padding: .7em .2em;
-      width: fit-content;
-      margin: 0 auto;
-      margin-bottom: 2em;
-      border-bottom-left-radius: .2em;
-      border-bottom-right-radius: .2em;
+      h3 {
+        background-color: $main-color;
+        padding: .7em .2em;
+        width: fit-content;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        // To offset input field
+        // margin-bottom: .2em;
+        border-bottom-left-radius: .2em;
+        border-bottom-right-radius: .2em;
+      }
+    }
+    .search-box {
+      height: 26px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1.8em;
+      border-style: none;
     }
   }
 }

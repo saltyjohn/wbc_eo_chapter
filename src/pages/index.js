@@ -2,12 +2,15 @@ import React from 'react'
 import Alumni from '../components/contact.alumni'
 
 import sortTableData from '../utils/sortTableData'
+// import searchIcon from '../icons/zondicons/search.svg'
 import '../scss/home.scss'
 
 class IndexPage extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      search: ''
+    };
   }
 
   componentDidMount() {
@@ -33,6 +36,15 @@ class IndexPage extends React.Component {
           <nav>
             <h3>Alumni Committee</h3>
           </nav>
+          {/* <div className="search-box">
+            <img
+              src={searchIcon}
+              alt="search icon"
+              width='26px'
+              height='26px'
+            />
+            <input type="text" value={this.state.search} />
+          </div> */}
           {alumComm ? <Alumni rows={Object.values(alumComm)} /> : <div />}
         </section>
       </main>
