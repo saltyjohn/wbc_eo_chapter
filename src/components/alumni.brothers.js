@@ -11,7 +11,7 @@ const AlumniBrothers = ({ rows }) => {
     <div>
       {rows.map((row, i) => {
         const { name, year, nickname, street_address, town, state, zip, phone, rip } = row;
-        console.log(row)
+        // console.log(row)
         if (i !== 0) {
           return (
             <div id="brothers-contact" className="contact-container" key={`${row}_${i}`} >

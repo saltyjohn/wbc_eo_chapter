@@ -8,6 +8,7 @@ $xs-res-width: 480px;
 
 
 .contact-container {
+  line-height: 1.8em;
   padding: .1em 1em;
   background-color: #fff;
 
@@ -83,11 +84,13 @@ $xs-res-width: 480px;
 // Fix for Brothers Contact Info
 #brothers-contact {
   padding-top: 1em;
+  margin-left: .5em;
 
   .address-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: .5em;
 
     @media screen and (max-width: $sm-res-width) {
       flex-direction: column;
@@ -96,6 +99,7 @@ $xs-res-width: 480px;
     .name-card {
       display: flex;
       flex-direction: column;
+      margin-bottom: 1.5em;
 
       // Name and Year
       h3 {
@@ -139,6 +143,7 @@ $xs-res-width: 480px;
         font-weight: 600;
         font-style: italic;
         margin: .5em 2em;
+        margin-bottom: 0;
 
         @media screen and (max-width: $sm-res-width) {
           margin: .75em 0;
@@ -147,16 +152,21 @@ $xs-res-width: 480px;
     }
 
     .contact-info {
-      margin: 2em;
+      margin: 0 2em;
       text-align: end;
 
       @media screen and (max-width: $sm-res-width) {
         text-align: center;
+        margin: 2em;
       }
 
       p {
         font-size: 1.2em;
         margin: .5em 0;
+
+        @media screen and (max-width: $sm-res-width) {
+          // margin-bottom: 1em;
+        }
       }
     }
   }

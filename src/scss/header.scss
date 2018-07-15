@@ -6,23 +6,18 @@ $sm-res-width: 600px;
 $xs-res-width: 480px;
 
 
-// ------------------------------------------------------
-// ================== MAIN CONTAINER ====================
-// ------------------------------------------------------
 #header-container {
-  margin-bottom: 1.45rem;
+  margin-bottom: 1em;
   background-image: url("../img/frat_house.jpg");
   padding: 2rem 0;
-  letter-spacing: 1px;
+  letter-spacing: .08em;
 
   @media screen and (max-width: $sm-res-width) {
     padding: 0;
   }
 }
 
-// ------------------------------------------------------
-// ============= TRANSPARENT BACKGROUND =================
-// ------------------------------------------------------
+// TRANSPARENT BACKGROUND
 #tp-background {
   padding: 3rem 0;
   background: hsla(0, 0%, 0%, 0.75);
@@ -32,9 +27,6 @@ $xs-res-width: 480px;
   }
 }
 
-// ------------------------------------------------------
-// ==================== CONTENT =========================
-// ------------------------------------------------------
 #header-content {
   display: flex;
   width: 100%;
@@ -57,9 +49,6 @@ $xs-res-width: 480px;
   }
 }
 
-// ------------------------------------------------------
-// ======================= TITLE ========================
-// ------------------------------------------------------
 #title-container {
   align-self: flex-start;
   width: 80%;
@@ -74,6 +63,11 @@ $xs-res-width: 480px;
   h1 {
     margin: 0;
     margin-bottom: .1rem;
+
+    @media screen and (max-width: $sm-res-width) {
+      margin-bottom: .4em;
+    }
+
     a {
       @media screen and (max-width: $xs-res-width) {
         font-size: 12vw;
@@ -89,6 +83,7 @@ $xs-res-width: 480px;
     font-size: 165%;
     @media screen and (max-width: $xs-res-width) {
       font-size: 8vw;
+      margin-bottom: 1em;
     }
   }
 
@@ -127,6 +122,10 @@ $xs-res-width: 480px;
         font-weight: 800;
         color: $text-red;
         text-decoration: underline;
+      }
+
+      img {
+        fill: currentColor;
       }
     }
   }

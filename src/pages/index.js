@@ -1,13 +1,13 @@
 import React from 'react'
 
-
 import Alumni from '../components/alumni.comm'
 import Brothers from '../components/alumni.brothers'
 
 import eoSketch from '../img/EO House Sketch.jpg'
+import newFlag from '../img/New-flag.gif'
+import spring70 from '../img/Spring70.jpg'
 
 import sortTableData from '../utils/sortTableData'
-// import searchIcon from '../icons/zondicons/search.svg'
 import '../scss/home.scss'
 
 class IndexPage extends React.Component {
@@ -44,11 +44,15 @@ class IndexPage extends React.Component {
           <img src={eoSketch} alt="Epsilon Omicron Sketch" />
           {alumComm ? <Alumni rows={Object.values(alumComm)} /> : <div />}
         </section>
-
+        <img src={newFlag} alt="New Alumni Flag" />
+        <hr className="style-eight" />
         <section>
           <div className="section-head">
-            <h2>Brothers of 1968 - 1973</h2>
+            <h2>Brothers
+              <br />
+              1968 - 1973</h2>
           </div>
+          <img src={spring70} alt="Spring 1970 Frat House Group Photo" width="300" />
           {brothers ? <Brothers rows={Object.values(brothers)} /> : <div />}
         </section>
       </main>
