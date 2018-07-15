@@ -1,3 +1,6 @@
+$main-color: #c6d2da;
+$section-border-style: .3em solid $main-color;
+
 $lg-res-width: 960px;
 $sm-res-width: 600px;
 $xs-res-width: 480px;
@@ -15,7 +18,7 @@ $xs-res-width: 480px;
     padding: .5em;
     margin: 0;
     max-width: fit-content;
-    background-color: #f5f5f5;
+    // background-color: #f5f5f5;
     border-radius: .8em;
 
     @media screen and (max-width: $sm-res-width) {
@@ -48,7 +51,8 @@ $xs-res-width: 480px;
       margin: .5em;
 
       @media screen and (max-width: $sm-res-width) {
-        margin: .75em 0;
+        margin-top: .25em;
+        margin-bottom: .75em;
       }
     }
     // Email and Email Icon
@@ -69,5 +73,57 @@ $xs-res-width: 480px;
       }
     }
   }
+
+  .name-card {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: $sm-res-width) {
+      flex-direction: column;
+    }
+
+    h3 {
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: $sm-res-width) {
+        flex-direction: column;
+        margin: 0;
+      }
+
+      span {
+        font-size: 1.2em;
+        // border-bottom: .2em solid $main-color;
+        // border-right: .2em solid $main-color;
+        border-bottom-right-radius: .2em;
+        margin-right: .5em;
+        @media screen and (max-width: $sm-res-width) {
+          border: none;
+          margin-bottom: .5em;
+          margin-left: .05em;
+        }
+      }
+    }
+
+    h5 {
+      color: #535353;
+      font-size: 24px;
+      font-weight: 600;
+      font-style: italic;
+      margin: .5em;
+
+      @media screen and (max-width: $sm-res-width) {
+        margin: .75em 0;
+      }
+    }
+  }
+  .name-contact {
+    margin-bottom: 2em;
+
+    p {
+      margin: 0;
+    }
+  }
 }
+
 

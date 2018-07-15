@@ -33,7 +33,7 @@ const Header = ({ siteTitle, siteSubTitle }) => (
           <hr style={{ background: 'white', marginBottom: 10 }} />
           <nav>
             <Link to="/">Home</Link>
-            <Link to="/reunions">Reunions</Link>
+            <Link to="/reunions/">Reunions</Link>
             <Link to="/about">About</Link>
           </nav>
         </div>

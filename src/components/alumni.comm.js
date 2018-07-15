@@ -4,37 +4,38 @@ import React from 'react';
 import RIP from '../components/rip'
 import EmailComponent from '../components/email'
 // Styles
-import '../scss/contact.alumni.scss'
+import '../scss/alumni.scss'
 
-const AlumniComm
-  = ({ rows }) => {
-    return (
-      <div>
-        {rows.map((row, i) => {
+const AlumniComm = ({ rows }) => {
+  return (
+    <div>
+      {rows.map((row, i) => {
 
-          const rowData = Object.values(row);
-          const rip = rowData[3] ? <RIP /> : null;
-          const contactEmail = rowData[2] ? <EmailComponent email={rowData[2]} /> : null;
+        const { position, name, email } = row;
+        // console.log(position)
+        const rowData = Object.values(row);
+        const rip = rowData[3] ? <RIP /> : null;
+        const contactEmail = email ? <EmailComponent email={email} /> : null;
 
-          if (i !== 0) {
-            return (
-              <div className="contact-container" key={`${row}_${i}`} >
-                {/* Contact Position */}
-                <h4>{rowData[1]}</h4>
-                <div className="name-email">
-                  {/* Contact Name */}
-                  <h5><em>{rowData[0]}</em></h5>
-                  {/* Contact Email */}
-                  {contactEmail || rip}
-                </div>
-                <hr />
+        if (i !== 0) {
+          return (
+            <div className="contact-container" key={`${row}_${i}`} >
+              {/* Contact Position */}
+              <h4>{position}</h4>
+              <div className="name-email">
+                {/* Contact Name */}
+                <h5><em>{name}</em></h5>
+                {/* Contact Email */}
+                {contactEmail || rip}
               </div>
-            )
-          }
-        })}
-      </div>
-    )
-  }
+              <hr />
+            </div>
+          )
+        }
+      })}
+    </div>
+  )
+}
 
 export default AlumniComm
 

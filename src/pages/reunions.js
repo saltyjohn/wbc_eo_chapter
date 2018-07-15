@@ -1,10 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 const ReunionsPage = () => (
-  <div>
-    Reunions Page
-  </div>
+  <main role="main">
+    <h2>Reunions Page</h2>
+  </main>
 )
 
 export default ReunionsPage

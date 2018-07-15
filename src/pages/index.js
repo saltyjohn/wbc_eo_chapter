@@ -1,5 +1,8 @@
 import React from 'react'
+
+
 import Alumni from '../components/alumni.comm'
+import Brothers from '../components/alumni.brothers'
 
 import sortTableData from '../utils/sortTableData'
 // import searchIcon from '../icons/zondicons/search.svg'
@@ -33,19 +36,16 @@ class IndexPage extends React.Component {
     return (
       <main role="main">
         <section>
-          <nav>
-            <h3>Alumni Committee</h3>
-          </nav>
-          {/* <div className="search-box">
-            <img
-              src={searchIcon}
-              alt="search icon"
-              width='26px'
-              height='26px'
-            />
-            <input type="text" value={this.state.search} />
-          </div> */}
+          <div className="section-head">
+            <h2>Alumni Committee</h2>
+          </div>
           {alumComm ? <Alumni rows={Object.values(alumComm)} /> : <div />}
+        </section>
+        <section>
+          <div className="section-head">
+            <h2>Brothers of 1968 - 1973</h2>
+          </div>
+          {brothers ? <Brothers rows={Object.values(brothers)} /> : <div />}
         </section>
       </main>
     )
