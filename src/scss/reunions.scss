@@ -37,26 +37,43 @@ $xs-res-width: 480px;
       flex-direction: column;
     }
 
-
     img {
       max-width: 300px;
     }
   }
 
   .recap {
+    margin-top: 1em;
+    letter-spacing: .06em;
+    line-height: 1.6em;
+    font-size: 1.2em;
+
     h4 {
       font-size: 1.3em;
     }
-    margin-top: 1em;
-    letter-spacing: .0625em;
-    line-height: 1.6em;
-    font-size: 1.2em;
+
+    iframe {
+      display: block;
+      margin: 0 auto;
+      width: 560px;
+      height: 315px;
+    }
   }
+
 
 
   .addt-photos {
     text-align: center;
 
+    >div {
+      display: inline-block;
+      width: 100%;
+       a {
+         display: block;
+         width: 60%;
+         margin: .35em auto;
+       }
+    }
 
     a {
       @media screen and (max-width: $sm-res-width) {

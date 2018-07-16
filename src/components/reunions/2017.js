@@ -3,6 +3,9 @@ import React from 'react'
 import groupImg01 from '../../img/2017/2017_group_01.jpg'
 import groupImg02 from '../../img/2017/2017_group_02.jpg'
 
+const recap = `
+`
+
 const Reunion2017 = () => (
   <div className="reunion-content">
     <img src={groupImg01} alt="2017 Epsilon Omicron Alumni Gathering group photo 1" />
@@ -11,7 +14,7 @@ const Reunion2017 = () => (
       <h3>Western Pennsylvania</h3>
       <a href="http://www.hiddenvalleyresort.com/">Hidden Valley Resort</a>
     </div>
-    <hr className="style-eight" />
+    <hr className="style-ox" />
     <div className="recap">
       <h4>Reunion Recap: </h4>
       <p style={{ textIndent: '2em' }}>The brothers of Epsilon Omicron Theta Chi invaded the Hidden Valley mountain resort in Western PA on September 15th, 16th, and 17th. Seventy brothers, wives, and friends of Chi, including several "first timers" attended our 2017 RIB party reunion weekend. Everyone enjoyed the fellowship and beer while reliving the many great memories of of the last 45 to 50 years.</p>
@@ -33,7 +36,7 @@ const Reunion2017 = () => (
       </p>
     </div>
 
-    <hr className="style-eight" />
+    <hr className="style-ox" />
 
     <div className="addt-photos">
       <h4>Additional Photos:</h4>

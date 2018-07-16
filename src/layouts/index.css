@@ -104,7 +104,7 @@ hr {
   height: 0;
   overflow: visible;
 }
-hr.style-eight {
+hr.style-ox {
   overflow: visible; /* For IE */
   padding: 0;
   border: none;
@@ -112,7 +112,7 @@ hr.style-eight {
   color: #333;
   text-align: center;
 }
-hr.style-eight:after {
+hr.style-ox:after {
   content: "\0398\03A7";
   color: #f84242;
   display: inline-block;

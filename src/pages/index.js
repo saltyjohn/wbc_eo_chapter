@@ -45,7 +45,7 @@ class IndexPage extends React.Component {
           {alumComm ? <Alumni rows={Object.values(alumComm)} /> : <div />}
         </section>
         <img src={newFlag} alt="New Alumni Flag" />
-        <hr className="style-eight" />
+        <hr className="style-ox" />
         <section>
           <div className="section-head">
             <h2>Brothers

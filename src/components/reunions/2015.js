@@ -8,11 +8,6 @@ import locationImg02 from '../../img/2015/deck2.jpg'
 import oxMeeting from '../../img/2015/New_England_OX_Meeting.jpg'
 
 const recap = `
-
-
-
-
-Brother Benute
 `
 
 const Reunion = () => (
@@ -27,7 +22,7 @@ const Reunion = () => (
       <a href="http://www.hiddenvalleyresort.com/">PIER IV</a>
       <img src={locationImg02} alt="Pier IV Deck Image 2" />
     </div>
-    {/* <hr className="style-eight" /> */}
+    <hr className="style-ox" />
     <div className="recap">
       <h4>Reunion Recap: </h4>
       <p style={{ textIndent: '2em' }}>The brothers of Epsilon Omicron Theta Chi invaded the shores of Somers Point, NJ, June 11th, 12th, 13th, and 14th. Seventy one brothers, spouses, and friends, including several "first timers, enjoyed the fellowship and beer while reliving the many great memories of the last 40 years.</p>
@@ -50,18 +45,29 @@ const Reunion = () => (
         </strong>
       </p>
     </div>
-    <hr />
-    <div className="recap">
-      <h4 style={{ textAlign: 'center', color: '#f84242' }}>If you fail to plan, then you plan to fail!</h4>
-      <img src={oxMeeting} alt="July 1, 2014 Planning Session in Glastonbury, CT" width="90%" style={{marginBottom: '0'}} />
-      <p style={{ fontSize: 14, textAlign: 'center', }}><em>July 1, 2014 -  Planning Session - Glastonbury, CT</em></p>
-      <h5 style={{ fontSize: 20, textAlign: 'center', fontWeight: '700' }}>"Brain", "Benute", "Duck", and "Rat (RIP)"</h5>
-    </div>
-    <hr className="style-eight" />
+    <hr className="style-ox" />
     <div className="addt-photos">
       <h4>Additional Photos:</h4>
       <a href="http://s590.photobucket.com/user/OX_Burg/library/2015%20NJ%20Reunion%20Part%20I?sort=4&page=1" target="_blank">Dianne & Benute</a>
       <a href="http://s590.photobucket.com/user/OX_Burg/library/2015%20NJ%20Reunion%20-%20Part%20II?sort=9&page=1" target="_blank">Sally & Boo</a>
+
+    </div>
+    <hr />
+    <div className="recap">
+      <h4 style={{ textAlign: 'center', color: '#f84242' }}>If you fail to plan, then you plan to fail!</h4>
+      <img src={oxMeeting} alt="July 1, 2014 Planning Session in Glastonbury, CT" width="90%" style={{ marginBottom: '0' }} />
+      <p style={{ fontSize: 14, textAlign: 'center', }}><em>July 1, 2014 -  Planning Session - Glastonbury, CT</em></p>
+      <h5 style={{ fontSize: 20, textAlign: 'center', fontWeight: '700' }}>"Brain", "Benute", "Duck", and "Rat (RIP)"</h5>
+      <hr />
+      <p style={{ textAlign: 'center' }}>
+        A Few of New England's Chi's Hard At Work
+      </p>
+      <iframe
+        src="https://www.youtube.com/embed/PTU2He2BIc0"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      />
     </div>
   </div>
 )
