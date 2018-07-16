@@ -2,7 +2,7 @@ import React from 'react'
 
 import groupImg01 from '../../img/2013/2013_group_portrait.png'
 
-const awards = `#Best Footware: Billy Baer  {1st time contender}
+const awards = `Best Footware: Billy Baer  {1st time contender}
 #Best White Hair: Conroy
 #Mystery Guest: Ellis Weitzman
 #Oldest Shower - upper: (65) Ted Ankeney and his lovely bride
@@ -128,18 +128,16 @@ const Reunion = () => (
         const splitAward = award.split(':')
         const title = splitAward[0]
         const winner = splitAward[1]
-        if (i !== 0) {
-          return (
-            <p>
-              <span style={{ color: '#f84242' }}><strong>{title}:</strong></span>
-              <br />
-              <span style={{ display: 'block', margin: '.5em 0 .7em 0', fontWeight: 600 }}>
-                {winner}
-              </span>
-              <hr style={{ margin: 0 }} />
-            </p>
-          )
-        }
+        return (
+          <p>
+            <span style={{ color: '#f84242' }}><strong>{title}:</strong></span>
+            <br />
+            <span style={{ display: 'block', margin: '.5em 0 .7em 0', fontWeight: 600 }}>
+              {winner}
+            </span>
+            <hr style={{ margin: 0 }} />
+          </p>
+        )
       })}
       <hr className="style-ox" />
       <p>And there it is..... sorry to those I forgot..................sorry to those I don't know.... sorry to those that think THEY hands down gained the most weight....</p>
