@@ -7,23 +7,24 @@ $xs-res-width: 480px;
 
 #footer {
   display: flex;
+  flex-direction: column;
   align-items: center;
   background-color: #313131;
-  min-height: 10em;
+  min-height: 6em;
 
   img {
     margin: 1em;
-
     @media screen and (max-width: $sm-res-width) {
       display: none;
     }
   }
-  a {
+
+  #original-link {
     font-weight: 600;
     font-size: .8em;
     letter-spacing: .04em;
     color: #535353;
-    margin: .25em auto;
+    margin: .75em auto;
     padding: .5em;
     text-decoration: none;
     line-height: 2em;
