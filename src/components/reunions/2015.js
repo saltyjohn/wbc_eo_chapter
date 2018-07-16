@@ -9,7 +9,7 @@ import oxMeeting from '../../img/2015/New_England_OX_Meeting.jpg'
 
 
 const Reunion2015 = () => (
-  <div className="reunion-content">
+  <div className="section-content">
     <img src={groupImg01} alt="2015 Epsilon Omicron Alumni Gathering group photo 1" />
     <p style={{ fontSize: 16, textAlign: 'center' }}>Missing from Group Photo:<br /> Byron "Greek" Gregory, David "Has" Hasbrouck, Ellen McGrath, Jason Simpson, and Phyllis Simpson</p>
     <div className="location" style={{ textAlign: 'center' }}>

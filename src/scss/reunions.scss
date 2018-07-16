@@ -4,7 +4,7 @@ $lg-res-width: 960px;
 $sm-res-width: 600px;
 $xs-res-width: 480px;
 
-.reunion-content {
+.section-content {
   img {
     margin: 1em auto;
     padding: 0;
@@ -74,15 +74,15 @@ $xs-res-width: 480px;
         align-items: center;
         list-style-type: none;
         padding-bottom: .5em;
-        min-width: 4em;
+        width: 12em;
       }
       li::before {
         content: "\0398\03A7";
-        font-size: .5em;
+        font-size: .4em;
         color: #fff;
         border-radius: 10%;
         background-color: $text-red;
-        padding: 0 1em;
+        padding: 0 .8em;
         margin-right: 1em;
       }
     }

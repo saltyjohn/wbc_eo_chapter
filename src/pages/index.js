@@ -5,7 +5,7 @@ import Brothers from '../components/alumni.brothers'
 
 import eoSketch from '../img/EO House Sketch.jpg'
 import newFlag from '../img/New-flag.gif'
-import spring70 from '../img/Spring70.jpg'
+import spring70 from '../img/archives/1970_theta_chi.jpg'
 
 import sortTableData from '../utils/sortTableData'
 import '../scss/page.scss'

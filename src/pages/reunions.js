@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import ReunionNavButton from '../components/btn.reunion'
+import NavBtn from '../components/nav.btn'
 
 // 1992, 2007, 2009, 2011, 2013, 2015, and 2017 Reunions
 import R2017 from '../components/reunions/2017'
@@ -35,18 +35,22 @@ class ReunionsPage extends Component {
 
   render() {
     const { reunions, currentView, reunionKey } = this.state
+    console.log('2017' in reunionKey)
     return (
       <main role="main">
+        <hr className="style-ox" />
         <nav>
           {reunions.map(year =>
-            <ReunionNavButton
+            <NavBtn
               year={year}
               cView={currentView}
               handleClick={this.handleView}
               key={`reunion_${year}`}
+              isActive={year in reunionKey}
             />
           )}
         </nav>
+        <hr className="style-ox" />
         <section>
           <div className="section-head">
             <h2>{currentView} Reunion</h2>

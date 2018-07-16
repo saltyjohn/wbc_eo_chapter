@@ -79,7 +79,7 @@ const awards = `Best Footware: Billy Baer  {1st time contender}
 `
 
 const Reunion2013 = () => (
-  <div className="reunion-content">
+  <div className="section-content">
     <img src={groupImg01} alt="2015 Epsilon Omicron Alumni Gathering group photo 1" />
     <div className="location" style={{ textAlign: 'center' }}>
       <h3>Waynesburg, PA</h3>
@@ -139,11 +139,11 @@ const Reunion2013 = () => (
           </p>
         )
       })}
-      <hr className="style-ox" />
       <p>And there it is..... sorry to those I forgot..................sorry to those I don't know.... sorry to those that think THEY hands down gained the most weight....</p>
       <p>Sorry I refuse to list things I wasn't privy to.... sorry Mike "Censorship" Nichols couldn't review this first.</p>
       <p>Any resemblance to sarcasm and or real people in this work of fiction is flatly denied.... see my very first lawyer, BG DiStephano, esq.</p>
     </div>
+    <hr className="style-ox" />
   </div>
 )
 

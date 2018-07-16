@@ -7,7 +7,7 @@ const recap = `
 `
 
 const Reunion2017 = () => (
-  <div className="reunion-content">
+  <div className="section-content">
     <img src={groupImg01} alt="2017 Epsilon Omicron Alumni Gathering group photo 1" />
 
     <div className="location">

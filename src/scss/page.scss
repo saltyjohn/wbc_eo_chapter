@@ -16,11 +16,12 @@ main {
   nav {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     overflow: hidden;
+    margin: 2em 0 2.2em 0;
 
     button {
-      margin: .35em;
+      margin: .25em .35em;
       width: 5em;
       line-height: 2em;
       background-color: #acd6f1;
@@ -50,6 +51,17 @@ main {
       color: $text-red;
       transform: translateY(-3px);
       box-shadow: 0 4px 8px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+    }
+    button.btn-disabled {
+      background-color: #bebebe;
+      box-shadow: none;
+      &:hover {
+        color: inherit;
+        cursor: default;
+        box-shadow: none;
+        background-color: #bebebe;
+        transform: translateY(0)
+      }
     }
   }
 
