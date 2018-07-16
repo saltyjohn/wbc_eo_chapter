@@ -2,13 +2,11 @@ import React from 'react'
 
 import eoHouse from '../../img/EO_House_Sketch.jpg'
 import groupImg01 from '../../img/2015/2015_group_01.jpg'
-import groupImg02 from '../../img/2015/2015_group_02.jpg'
+import groupImg02 from '../../img/2015/2015_group_2.jpg'
 import locationImg01 from '../../img/2015/deck.jpg'
 import locationImg02 from '../../img/2015/deck2.jpg'
 import oxMeeting from '../../img/2015/New_England_OX_Meeting.jpg'
 
-const recap = `
-`
 
 const Reunion2015 = () => (
   <div className="reunion-content">

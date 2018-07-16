@@ -66,13 +66,15 @@ $xs-res-width: 480px;
     }
 
     ul {
-      // margin: .2em 1.5em;
+      display: flex;
+      flex-wrap: wrap;
 
       li {
         display: flex;
         align-items: center;
         list-style-type: none;
         padding-bottom: .5em;
+        min-width: 4em;
       }
       li::before {
         content: "\0398\03A7";
