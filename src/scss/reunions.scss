@@ -57,9 +57,15 @@ $xs-res-width: 480px;
   .addt-photos {
     text-align: center;
 
+
     a {
+      @media screen and (max-width: $sm-res-width) {
+        display: block;
+        width: 80%;
+        margin: .35em auto;
+      }
       text-decoration: none;
-      // margin: .35em;
+      margin: .35em;
       padding: .4em;
       width: 5em;
       line-height: 2em;

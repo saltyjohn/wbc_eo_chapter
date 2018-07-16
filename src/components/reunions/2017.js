@@ -24,14 +24,20 @@ const Reunion2017 = () => (
       <p>More brothers arrived for the big event on Saturday afternoon with a 5 hour RIB Party. This event was held at the pavilion overlooking Hidden Valley's beautiful golf course. A moment of silence was held for Ted Ankeney, Ron Chopyak, Guy Leonard, and family members lost over the last year. A toast was made for Brother Squirrel who was unable to attend our reunion. Brain presented to all the brothers a sketch of the Wall next to Walton Hall. The RIB Party picnic included ribs, baked chicken, roasted potatoes, salad, several deserts, and unlimited beer and wine. The group then re-convened after dinner at the "fire pit" for more camaraderie and story telling.</p>
       <p>The fire pit was a huge success and very popular with the brothers.</p>
       <p>Our next reunion will be in Somers Point, NJ in 2019 and the Alumni Committee will begin plans in early 2018.</p>
-      <p><strong><em>Brother Benute</em></strong></p>
+      <p>
+        <strong>
+          <em>
+            -Brother Benute
+          </em>
+        </strong>
+      </p>
     </div>
 
     <hr className="style-eight" />
 
     <div className="addt-photos">
       <h4>Additional Photos:</h4>
-      <a href="">Bill Jackman Collection</a>
+      <a href="http://s298.photobucket.com/user/billj6/library/Hidden%20Valley%20September%202017?sort=3&page=1" target="_blank">Bill Jackman Collection</a>
     </div>
   </div>
 )
