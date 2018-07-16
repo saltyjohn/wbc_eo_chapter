@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import ReunionNavButton from '../components/btn.reunion'
 // 1992, 2007, 2009, 2011, 2013, 2015, and 2017 Reunions
 import R2017 from '../components/reunions/2017'
+import R2015 from '../components/reunions/2015'
 
 import '../scss/reunions.scss'
 
@@ -13,7 +14,8 @@ class ReunionsPage extends Component {
       reunions: ['2017', '2015', '2013', '2011', '2009', '2007', '1992'],
       currentView: '2017',
       reunionKey: {
-        '2017': <R2017 />
+        '2017': <R2017 />,
+        '2015': <R2015 />,
       }
     }
     this.handleView = this.handleView.bind(this)

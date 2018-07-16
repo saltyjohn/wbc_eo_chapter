@@ -1,7 +1,6 @@
 $main-color: #c6d2da;
 $section-border-style: .3em solid $main-color;
 $text-red: #f84242;
-
 $lg-res-width: 960px;
 $sm-res-width: 800px;
 $xs-res-width: 480px;
@@ -99,7 +98,6 @@ $xs-res-width: 480px;
     .name-card {
       display: flex;
       flex-direction: column;
-      margin-bottom: 1.5em;
 
       // Name and Year
       h3 {
