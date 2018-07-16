@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 
 import ReunionNavButton from '../components/btn.reunion'
+
 // 1992, 2007, 2009, 2011, 2013, 2015, and 2017 Reunions
 import R2017 from '../components/reunions/2017'
 import R2015 from '../components/reunions/2015'
 import R2013 from '../components/reunions/2013'
+import R2011 from '../components/reunions/2011'
 
 import '../scss/reunions.scss'
 
@@ -18,6 +20,7 @@ class ReunionsPage extends Component {
         '2017': <R2017 />,
         '2015': <R2015 />,
         '2013': <R2013 />,
+        '2011': <R2011 />,
       }
     }
     this.handleView = this.handleView.bind(this)

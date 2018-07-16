@@ -78,7 +78,7 @@ const awards = `Best Footware: Billy Baer  {1st time contender}
 #Best Excuse for Non Attendance: Soup(get well, dude!)
 `
 
-const Reunion = () => (
+const Reunion2013 = () => (
   <div className="reunion-content">
     <img src={groupImg01} alt="2015 Epsilon Omicron Alumni Gathering group photo 1" />
     <div className="location" style={{ textAlign: 'center' }}>
@@ -147,7 +147,7 @@ const Reunion = () => (
   </div>
 )
 
-export default Reunion
+export default Reunion2013
 
 const thisar = `
 
