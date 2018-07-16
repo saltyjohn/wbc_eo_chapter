@@ -3,10 +3,13 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
+
+import oxFlag from '../img/ox_new.jpg'
 import './index.css'
 
 const Layout = ({ children, data }) => {
   const meta = data.site.siteMetadata;
+  console.log(children())
   return (
     <div>
       <Helmet
@@ -27,6 +30,15 @@ const Layout = ({ children, data }) => {
       >
         {children()}
       </div>
+      {/* TODO: make sticky flag */}
+      {/* <img
+        src={oxFlag}
+        alt="Epsilon Omicron Flag"
+        style={{
+          position: "absolute",
+          top: "50%"
+        }}
+      /> */}
     </div>
   )
 }

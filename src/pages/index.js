@@ -8,7 +8,7 @@ import newFlag from '../img/New-flag.gif'
 import spring70 from '../img/Spring70.jpg'
 
 import sortTableData from '../utils/sortTableData'
-import '../scss/home.scss'
+import '../scss/page.scss'
 
 class IndexPage extends React.Component {
   constructor(props) {

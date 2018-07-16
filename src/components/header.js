@@ -39,7 +39,7 @@ const Header = ({ siteTitle, siteSubTitle }) => (
               Home
             </Link>
             <Link to="/reunions/">Reunions</Link>
-            <Link to="/about">About</Link>
+            <Link to="/archives">Archives</Link>
           </nav>
         </div>
       </div>
