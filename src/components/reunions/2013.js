@@ -106,7 +106,7 @@ const Reunion2013 = () => (
     </div>
     <hr className="style-ox" />
     <div className="addt-photos">
-      <h4>Additional Photos:</h4>
+      <h4>Additional  Photo Collections by:</h4>
       <div>
 
         <a href="http://s298.photobucket.com/user/billj6/library/collection?sort=2&page=1" target="_blank">Bill "Little Butz" Jackman's</a>

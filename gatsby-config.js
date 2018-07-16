@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/original',
   siteMetadata: {
     title: 'Waynesburg College',
     subTitle: 'Epsilon Omicron Alumni Chapter',

@@ -45,7 +45,7 @@ const Reunion2011 = () => (
     </div>
     <hr className="style-ox" />
     <div className="addt-photos">
-      <h4>Additional Photos:</h4>
+      <h4>Additional  Photo Collections by:</h4>
       <a href="http://s1089.photobucket.com/user/Burg_Theta_Chi/library/Reunion%202011%20-%20Benute%20Photos?sort=3&page=1" target="_blank">2011 Photos</a>
     </div>
     <hr />

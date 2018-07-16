@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
+import Footer from '../components/footer'
 import './index.css'
 
 // Used Gatsby Starter "Portfolio Emma" to learn how to include favicon
@@ -35,6 +36,7 @@ const Layout = ({ children, data }) => {
       >
         {children()}
       </div>
+      <Footer />
     </div>
   )
 }

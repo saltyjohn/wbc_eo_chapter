@@ -45,7 +45,7 @@ const Reunion2015 = () => (
     </div>
     <hr className="style-ox" />
     <div className="addt-photos">
-      <h4>Additional Photos:</h4>
+      <h4>Additional  Photo Collections by:</h4>
       <a href="http://s590.photobucket.com/user/OX_Burg/library/2015%20NJ%20Reunion%20Part%20I?sort=4&page=1" target="_blank">Dianne & Benute</a>
       <a href="http://s590.photobucket.com/user/OX_Burg/library/2015%20NJ%20Reunion%20-%20Part%20II?sort=9&page=1" target="_blank">Sally & Boo</a>
 

@@ -39,7 +39,7 @@ const Reunion2017 = () => (
     <hr className="style-ox" />
 
     <div className="addt-photos">
-      <h4>Additional Photos:</h4>
+      <h4>Additional  Photo Collections by:</h4>
       <a href="http://s298.photobucket.com/user/billj6/library/Hidden%20Valley%20September%202017?sort=3&page=1" target="_blank">Bill Jackman Collection</a>
     </div>
   </div>
