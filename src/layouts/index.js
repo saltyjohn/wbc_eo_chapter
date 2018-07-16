@@ -3,22 +3,27 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/header'
-
-import oxFlag from '../img/ox_new.jpg'
 import './index.css'
+
+// Used Gatsby Starter "Portfolio Emma" to learn how to include favicon
+// https://github.com/LeKoArts/gatsby-starter-portfolio-emma
+import favicon from '../img/favicon-flag.ico'
+
 
 const Layout = ({ children, data }) => {
   const meta = data.site.siteMetadata;
-  console.log(children())
+  // console.log(children())
   return (
     <div>
       <Helmet
         title={meta.title}
         meta={[
           { name: 'description', content: 'Waynesburg College Epsilon Omicron Chapter Alumni Page.' },
-          { name: 'keywords', content: 'Waynesburg,Epsilon,Omicron,Alumni' },
+          { name: 'keywords', content: 'waynesburg,epsilon,omicron,alumni,chapter,68,69,70,71' },
         ]}
-      />
+      >
+        <link rel="shortcut icon" href={favicon} />
+      </Helmet>
       <Header siteTitle={meta.title} siteSubTitle={meta.subTitle} />
       <div
         style={{
@@ -30,15 +35,6 @@ const Layout = ({ children, data }) => {
       >
         {children()}
       </div>
-      {/* TODO: make sticky flag */}
-      {/* <img
-        src={oxFlag}
-        alt="Epsilon Omicron Flag"
-        style={{
-          position: "absolute",
-          top: "50%"
-        }}
-      /> */}
     </div>
   )
 }

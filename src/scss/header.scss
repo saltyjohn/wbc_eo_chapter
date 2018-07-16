@@ -115,7 +115,7 @@ $xs-res-width: 480px;
         width: 50%;
         margin: .1rem auto;
       }
-      @media screen and (max-width: 480px) {
+      @media screen and (max-width: $lg-res-width) {
         width: 50%;
         margin: .5rem auto;
       }
