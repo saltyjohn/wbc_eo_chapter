@@ -1,26 +1,9 @@
 import React from 'react'
 
-import eoHouse from '../../img/EO_House_Sketch.jpg'
-import groupImg01 from '../../img/2015/2015_group_01.jpg'
-import groupImg02 from '../../img/2015/2015_group_02.jpg'
 import locationImg01 from '../../img/2015/deck.jpg'
 import locationImg02 from '../../img/2015/deck2.jpg'
-import oxMeeting from '../../img/2015/New_England_OX_Meeting.jpg'
 
 const recap = `
-June 2nd thru 5th, 2011
-The Epsilon Omicron brothers of Theta Chi invaded the Pier IV in Somers Point, NJ
-
-The fairer side of the group included:
-Sally Everson,  Kathy Ullom, Ellen Mayer, Suzi Nichols, Sandy Pearl, Sandy Glenn, Marge,
-Nadine Fisler, Joan Jones, and Jackie Moon who joined us in the fun and festivities.
-
-
-
-
-
-
-2011 reunion hats were presented to those brothers and spouses in attendance.
 `
 
 const attendance = `Bill Baer, Ken Bletsch, Art Dalle Molle, Tom Dalle Molle, Barry Everson, Bob Fisler, Tim Glenn, Byron Gregory, Dave Hasbrouck, Rick Jones, Denny Lang, Mark Lewis, Ben Lyster, Gene McGrath, John Monacella, Jody Moreau, Peter Nangeroni, Mike Nichols, Ray Pearl, Steve Rogers, John Ullom, Scott Weaver.`
@@ -54,14 +37,14 @@ const Reunion2011 = () => (
       <p>Saturday afternoon a group went over to The Clam Bar for an afternoon feast.</p>
       <p>Outings to the boardwalk, golf, and gambling rounded out the reunion weekend.</p>
       <p>Saturday afternoon at 5:00 PM there was a <strong>moment of silence</strong> in memory of <strong><em>brother Bill Simpson</em></strong> followed by an open bar hosted by the fraternity in his honor.</p>
-      <p></p>
-      <p>
+      <p>2011 reunion hats were presented to those brothers and spouses in attendance.</p>
+      {/* <p>
         <strong>
           <em>
             - Brother Benute
           </em>
         </strong>
-      </p>
+      </p> */}
     </div>
     <hr className="style-ox" />
     <div className="addt-photos">
